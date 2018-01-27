@@ -26,11 +26,14 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    aqimage.cpp
+        aqimage.cpp \
+        boxfilter.cpp
+
 
 HEADERS += \
         mainwindow.h \
-    aqimage.h
+        aqimage.h \
+        boxfilter.h
 
 FORMS += \
         mainwindow.ui

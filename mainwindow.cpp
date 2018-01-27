@@ -37,6 +37,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     connect(open_button, SIGNAL(clicked(bool)), this, SLOT(openImage()));
     connect(buttons[0], SIGNAL(clicked(bool)), this, SLOT(detect()));
+    buttons[0]->setEnabled(false);
 
     buttons[0]->setText("Detect");
 
@@ -60,6 +61,7 @@ void MainWindow::openImage() {
                                                     "C:/",
                                                     tr("Images (*.png *.xpm *.jpg)"));
     image.setImage(filename);
+    buttons[0]->setEnabled(true);
     updateImage();
 }
 

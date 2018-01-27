@@ -6,6 +6,7 @@
 
 class AQImage : public QImage{
 private:
+    BoxFilter box;
     QImage buffer_image;
     int shift;
 public:
@@ -30,11 +31,10 @@ public:
 
 
     // Functions for working with extended image
-    /*
+
     QImage initBufferImage(const int&);
     void acceptBoxFilter(const QImage&);
     void extractResult(const QImage&);
-    */
 };
 
 #endif // AQIMAGE_H

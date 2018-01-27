@@ -122,7 +122,7 @@ void AQImage::makeSmooth(const int& size, const double& sigma) {
 
 
 // Functions for working with extended image
-/*
+
 void AQImage::acceptBoxFilter(const QImage& _image) {
     QImage _buffer_image;
     _buffer_image = _image;
@@ -172,4 +172,4 @@ QImage AQImage::initBufferImage(const int& box_size) {
         }
     return _buffer_image;
 }
-*/
+
